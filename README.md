@@ -11,6 +11,7 @@ Welcome to **World Wise** – your personal travel memory journal. This website 
 - [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
 - [License](#license)
+- [Contact](#Contact)
 
 ## Features
 
