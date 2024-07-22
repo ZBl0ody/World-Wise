@@ -7,7 +7,7 @@ const AppNav = () => {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <NavLink to="cites">Cites</NavLink>
+          <NavLink to="cities">cities</NavLink>
         </li>
         <li>
           <NavLink to="countries">Countries</NavLink>
