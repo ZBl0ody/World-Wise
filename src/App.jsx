@@ -13,6 +13,7 @@ const BASE_URL = "http://localhost:8000";
 const App = () => {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
     async function getCities() {
       try {
@@ -44,7 +45,10 @@ const App = () => {
             path="cities"
             element={<CityList cities={cities} isLoading={isLoading} />}
           />
-          <Route path="countries" element={<CountryList />} />
+          <Route
+            path="countries"
+            element={<CountryList cities={cities} isLoading={isLoading} />}
+          />
           {/* <Route path="form" element={<Form />} /> */}
         </Route>
         <Route path="*" element={<PageNotFound />} />
